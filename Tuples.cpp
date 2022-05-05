@@ -17,7 +17,7 @@ void alphabet(char start, char end, int size, string p = "")
 	}
 }
 
-int main()
+int main(void)
 {
 	string p;
 	char start, end;
