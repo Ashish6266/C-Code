@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 char encryption1(char, int);
 char decryption1(char, int);
 
@@ -95,7 +97,7 @@ int main()
 
 		else if (isupper(Input))
 		{
-			cout << Input << endl;
+			cout << Input << endl;1
 		}
 
 		char map = Input - 65;

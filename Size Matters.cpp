@@ -17,7 +17,7 @@ int main(void)
 	float c;
 	cout << sizeof(c) << "\n";
 
-	long float e;
+	float e;
 	cout << sizeof(e) << "\n";
 
 	long double g;

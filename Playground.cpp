@@ -1,24 +1,13 @@
 #include <iostream>
 
-const char * recomendMeFood(char firstLeter);
-
-
-int main()
-{
-    int age;
-    age = 25;
-    std::cout << "Today I'll eat " << recomendMeFood('c');
-    return 0;
-}
-
-const char * recomendMeFood(char firstLeter){
-    if(firstLeter == 'a' || firstLeter =='A'){
-        return "apple";
+class String{
+public:
+    String(const char* string){
+        m_Size = strlng(string);
+        m_Data = new char[m_Size];
+        memcpy(m_Data, string, m_Size);
     }
-    else if (firstLeter =='b' || firstLeter == 'B'){
-        return "banna";
-    }
-    else if (firstLeter =='c' || firstLeter == 'C'){
-        return "cake";
-    }
-}
+private:
+    char* m_Data;
+    uint32_t m_Size;
+};
